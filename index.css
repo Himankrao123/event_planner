@@ -1,0 +1,310 @@
+/* FILEPATH: /D:/Programming/web development/event management/event planner/index.css */
+@font-face 
+{
+    font-family: "Edwardian Script ITC";
+    src: url("ITCEDSCR.TTF");
+}
+/* Reset default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+  /* background-color: #f2f2f2; */
+  font-family: Arial, sans-serif;
+}
+
+/* Center the content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Style the button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+/* crausel */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  width: 100%;
+  position: relative;
+  /* margin-right: 5%; */
+  /* margin-left: 5%; */
+  margin: 0px;
+  height: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: black;
+  /* background-color: lightgrey; */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: grey;
+}
+
+/* Caption text */
+.text {
+  /* color: brown; */
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Edwardian Script ITC;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* end crausel */
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #902d95;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff7f50;
+        }
+
+        /* Main Styles */
+        .hero {
+            background-image: url('party12.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* color: #fff; */
+
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #333;
+            /* text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1); */
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 20px;
+            /* color: #fff; */
+            /* text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1); */
+        }
+
+        .btn {
+            background-color: #ff7f50;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff6347;
+        }
+
+        .services {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .service {
+            margin-bottom: 40px;
+        }
+
+        .service img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .service h3 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 18px;
+        }
+
+        .gallery {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .image {
+            margin-bottom: 40px;
+        }
+
+        .image img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #902d95;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+
+        /* Add more transitions for other elements */
+
+   
+
+    /* Add more transitions for other elements */
+
+    /* Styles for mobile view */
+    @media (max-width: 768px) {
+        header {
+            font-size: small;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+        }
+
+        .service h3 {
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .service p {
+            font-size: 16px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .contact p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    }

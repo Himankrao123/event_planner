@@ -1,0 +1,21 @@
+.about p{
+    text-align: left;
+    padding: 30px;
+    font-size: large;
+}
+.about h2{
+    color: #333;
+}
+.about{
+    /* text-align: center; */
+    padding: 10px;
+}
+
+@media(max-width: 768px){
+    .about p{
+        text-align: justify;
+    }
+    .about{
+        text-align: center;
+    }
+}
