@@ -2,21 +2,21 @@
 @font-face 
 {
     font-family: "Edwardian Script ITC";
-    src: url("./ITCEDSCR.TTF");
+    src: url("/ITCEDSCR.TTF");
 }
 
 @font-face{
     font-family: "myfont";
-    src:url("./GustatoryDelightRegular-rgX3L.TTF");
+    src:url("/GustatoryDelightRegular-rgX3L.TTF");
 }
 
 @font-face{
     font-family: "myfont2";
-    src:url("./Enthusiastic-OV148.TTF");
+    src:url("/Enthusiastic-OV148.TTF");
 }
 @font-face{
     font-family: "myfont3";
-    src:url("./Aurella.TTF");
+    src:url("/Aurella.TTF");
 }
 /* Reset default styles */
 body, h1, p {
