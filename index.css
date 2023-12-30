@@ -475,6 +475,9 @@ body {
             font-size: small;
             /* padding: 10px; */
         }
+        .header-logo{
+            height: 20px;
+        }
         nav ul{
             justify-content: center;
         }
