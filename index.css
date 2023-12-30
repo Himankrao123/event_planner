@@ -176,16 +176,22 @@ body {
             color: #fff;
             padding: 20px;
         }
-
+        .header-logo{
+            /* width: 50px; */
+            height: 40px;
+        }
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
+            align-items: center;
         }
 
         nav ul li {
             margin-right: 20px;
+            font-size: normal;
+            /* margin-top: 30px; */
         }
 
         nav ul li a {
@@ -468,6 +474,13 @@ body {
         header {
             font-size: small;
             /* padding: 10px; */
+        }
+        nav ul{
+            justify-content: center;
+        }
+        nav ul li{
+            margin-right: 15px;
+            font-size: small;
         }
         .hero{
             padding:3px;
