@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Event Management, Rewari Events, Manesar Event Planner, Event Coordination, Party Planning, Corporate Events, Wedding Planning, Wedding Planner, Wedding and Event Planner, Event Management Planning, Wedding Planner in Rewari, Wedding Planner in India, Event Planner in Rewari, Event Planner in India, Event Management Company, Rewari Wedding Planner, Manesar Wedding Events, Corporate Event Coordination, Party Event Planner, India Wedding Planning Services">
+    <meta name="description" content="Experienced event management services in Rewari and Manesar. We specialize in creating unforgettable events tailored to your needs. Contact us for seamless planning and execution.">
+    <meta name="geo.placename" content="Rewari, Manesar">
+    <meta name="geo.position" content="28.1920;76.6191">
+    <meta name="ICBM" content="28.1920, 76.6191">
+
+    <title>Blossom Events - Gallery</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="icon" href="blossom-favicon-black.png" type="image/x-icon">
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function showimg(elem){
+            imgs = elem.querySelectorAll('img');
+            img = imgs[0];
+            let large_div = document.getElementById('large-img-div');
+            let large_img = document.getElementById('large-img');
+            large_img.src = img.src;
+            large_div.style.display = 'flex';
+            await sleep(300);
+            large_div.style.opacity = '1';
+        }
+
+        async function closeimg(){
+            document.getElementById('large-img-div').style.opacity = '0';
+            await sleep(300);
+            document.getElementById('large-img-div').style.display = 'none';
+        }
+
+        document.addEventListener('keydown', async function(event) {
+            // Check if the pressed key is the 'Escape' key
+            if (event.key === 'Escape' || event.keyCode === 27) {
+                // Execute your task here
+                document.getElementById('large-img-div').style.opacity = '0';
+                await sleep(300);
+                document.getElementById('large-img-div').style.display = 'none';
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./blossom-favicon-white.png" class="header-logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="large-img-div" id="large-img-div">
+            <a class="btn close-btn" onclick="closeimg()">X</a>
+            <img class="large-img" id="large-img" src="birthday-event.jpg">
+        </div>
+        <section class="contact">
+            <h2 style="width: 100%;">Gallery</h2>
+            <hr style="width: 80%;border-radius: 50%;">
+            <div class="gallery-div">
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="college-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="birthday.jpg"></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="coperative-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="birthday-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="wedding.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="wedding1.jpeg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="wedding-services.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="wedding-planning.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="dj-party-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="dj-party.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="launching-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="party-organizing.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="college-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="birthday-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="coperative-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="college-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="birthday-event.jpg"></a></div>
+                <div><a class="gallery-img-link" onclick="showimg(this)"><img src="coperative-event.jpg"></a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <p>&copy; 2024 Blossom Events. All rights reserved.</p>
+    </footer>
+    <script src="helper.js"></script>
+    
+
+</body>
+</html>

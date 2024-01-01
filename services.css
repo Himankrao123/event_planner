@@ -1,0 +1,89 @@
+.service-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* position: absolute; */
+    bottom: 0px;
+
+}
+
+.services{
+    text-align: center;
+}
+
+.services-list{
+    width: 100%;
+    padding: 20px;
+
+}
+
+.services-list h1{
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.services-list p img{
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+.services-list p{
+    font-size: large;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.services-list p::after{
+    content:"";
+    clear:both;
+    display: table;
+}
+
+.services-list p span{
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: rgb(191, 6, 191);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+    border: 1px grey;
+    margin: 5px;
+    color: white;
+}
+
+.services-list p span:hover{
+    background-color: rgb(224, 0, 224);
+}
+
+@media(max-width:1050px){
+    .services-list p img{
+        width: 30%;
+    }
+    .services-list p span{
+        font-size: medium;
+    }
+}
+
+@media(max-width:768px){
+    .services-list p img{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .services-list p span{
+        font-size: small;
+    }
+    .service-img{
+        height: 200px;
+        object-fit: cover;
+    }
+}

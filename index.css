@@ -119,9 +119,9 @@ body {
   width: 100%;
   text-align: center;
   font-family: myfont3;
-  color: rgb(55, 146, 220);
+  color:blanchedalmond;
     /* color: #fff; */
-    text-shadow: 0px 0px 0px black;
+    text-shadow: 0px 0px 0px white;
 }
 
 /* Number text (1/3 etc) */
@@ -160,7 +160,7 @@ body {
             /* font-family: 'Montserrat', sans-serif; */
             margin: 0;
             padding: 0;
-            background-color: rgb(255, 230, 255);
+            background-color: rgb(255, 237, 255);
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             padding-bottom: 3%;
             /* letter-spacing: 1px; */
@@ -168,6 +168,7 @@ body {
 
         main{
             min-height: 100%;
+            padding-top: 5vh;
         }
 
         /* Header Styles */
@@ -175,6 +176,10 @@ body {
             background-color: #1c1c1c;
             color: #fff;
             padding: 20px;
+            z-index: 3;
+            position: absolute;
+            width: 100%;
+            height: 10vh;
         }
         .header-logo{
             /* width: 50px; */
@@ -215,7 +220,7 @@ body {
             justify-content: center;
             align-items: center;
             text-align: center;
-            box-shadow: inset 0 -5px 12px 0px #000000;
+            box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.3);
             /* color: #fff; */
 
         }
@@ -224,7 +229,7 @@ body {
             font-size: 90px;
             margin-bottom: 20px;
             color: white;
-            text-shadow: 0px 0px 2px rgb(0, 0, 0);
+            text-shadow: 0px 0px 1px rgb(0, 0, 0);
             font-family: 'Montserrat', sans-serif;
         }
 
@@ -255,48 +260,6 @@ body {
 
         .btn:hover {
             background-color: purple;
-        }
-
-        .services {
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .service {
-            margin-bottom: 40px;
-        }
-
-        .service img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-
-        .service h3 {
-            font-size: 24px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        .service p {
-            font-size: 18px;
-        }
-
-        .gallery {
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .image {
-            margin-bottom: 40px;
-        }
-
-        .image img {
-            width: 400px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 5px;
         }
 
         .intro{
@@ -418,6 +381,41 @@ body {
             border-bottom-right-radius: 10px;
         }
 
+        .choose-us{
+            width: 100%;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .choose-us h2{
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .choose-us-div{
+            height: 300px;
+        }
+
+        .choose-us-div ul{
+            padding-top: 60px;
+            width: 50%;
+            height: 300px;
+            padding-left: 60px;
+            float: right;
+            border-left: 2px solid purple;
+        }
+
+        .choose-us-div img{
+            width: 30%;
+            max-height: 270px;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 30px;
+            float: left;
+            object-fit: cover;
+        }
+
         /* Footer Styles */
         footer {
             display: none;
@@ -468,6 +466,18 @@ body {
             font-size: 15px;
             font-weight: normal;
 
+        }
+
+        .choose-us-div ul{
+            padding-top: 20px;
+            font-size: medium;
+
+        }
+
+        .choose-us-div img{
+            width: 40%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
     }
     @media (max-width: 768px) {
@@ -587,5 +597,23 @@ body {
             font-size: 10px;
             margin-bottom: 15px;
             padding: 10px;
+        }
+
+        .choose-us-div img{
+            display: none;
+        }
+        .choose-us-div ul{
+            width: 100%;
+            border-left: none;
+            padding-left: 10%;
+            padding-top: 10px;
+            font-size: 14px;
+            height: max-content;
+        }
+        .choose-us-div{
+            height: max-content;
+        }
+        .choose-us h2{
+            font-size: 20px;
         }
     }
